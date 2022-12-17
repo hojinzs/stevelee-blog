@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "steveleeblog",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authsteveleeblog",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "AuthModeLastUpdated": "2022-12-17T02:23:18.611Z"
+}
