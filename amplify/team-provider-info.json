@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-amplifya06157591b764-staging-60425-unauthRole",
       "StackName": "amplify-amplifya06157591b764-staging-60425",
       "StackId": "arn:aws:cloudformation:ap-northeast-2:088457804476:stack/amplify-amplifya06157591b764-staging-60425/d3320480-7e99-11ed-9558-0a84de4da66c",
-      "AmplifyAppId": "d1zrb1kift3zjk"
+      "AmplifyAppId": "d1zrb1kift3zjk",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplifya06157591b764-staging-60425-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
@@ -17,6 +18,16 @@
       },
       "storage": {
         "s3steveleeblogstorage15ab32eb": {}
+      },
+      "function": {
+        "steveleeblogf3c144d1": {
+          "deploymentBucketName": "amplify-amplifya06157591b764-staging-60425-deployment",
+          "s3Key": "amplify-builds/steveleeblogf3c144d1-7337434a7078304a5877-build.zip"
+        }
+      },
+      "api": {
+        "steveleeblog": {},
+        "api99024a1e": {}
       }
     }
   },
