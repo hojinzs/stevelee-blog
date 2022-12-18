@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3steveleeblogstorage15ab32eb",
+  "bucketName": "stevelee-blog-storage-15ab32eb",
+  "policyUUID": "1d9a5d7e",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
