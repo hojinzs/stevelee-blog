@@ -26,8 +26,8 @@ export function amplifyConfig() {
             ...awsConfig,
             oauth: {
                 ...awsConfig.oauth,
-                redirectSignIn: isLocalhost? `http://${document.location.host}` : `https://${document.location.host}`,
-                redirectSignOut: isLocalhost? `http://${document.location.host}` : `https://${document.location.host}`,
+                redirectSignIn: isLocalhost? `http://${document.location.host}/auth` : `https://${document.location.host}/auth`,
+                redirectSignOut: isLocalhost? `http://${document.location.host}/auth` : `https://${document.location.host}/auth`,
             }
         }
 
