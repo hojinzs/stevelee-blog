@@ -37,6 +37,10 @@ export default function AuthPage() {
         })
     }
 
+    function handleLogout() {
+        Auth.signOut()
+    }
+
     return (
         <div>
             { !user && (
@@ -44,7 +48,16 @@ export default function AuthPage() {
                     로그인
                 </button>
             )}
-            { user && user.getUsername() }
+            { user && (
+                <>
+                    <div>
+                        { user.getUsername() }
+                    </div>
+                    <button onClick={handleLogout}>
+                        로그아웃
+                    </button>
+                </>
+            ) }
         </div>
     )
 }

@@ -12,22 +12,22 @@ export function amplifyConfig() {
             )
         );
 
-        const [
-            localRedirectSignIn,
-            productionRedirectSignIn,
-        ] = awsConfig.oauth.redirectSignIn.split(",");
-
-        const [
-            localRedirectSignOut,
-            productionRedirectSignOut,
-        ] = awsConfig.oauth.redirectSignOut.split(",");
+        // const [
+        //     productionRedirectSignIn,
+        //     localRedirectSignIn
+        // ] = awsConfig.oauth.redirectSignIn.split(",");
+        //
+        // const [
+        //     productionRedirectSignOut,
+        //     localRedirectSignOut
+        // ] = awsConfig.oauth.redirectSignOut.split(",");
 
         const updatedAwsConfig = {
             ...awsConfig,
             oauth: {
                 ...awsConfig.oauth,
-                redirectSignIn: isLocalhost ? localRedirectSignIn : productionRedirectSignIn,
-                redirectSignOut: isLocalhost ? localRedirectSignOut : productionRedirectSignOut,
+                redirectSignIn: isLocalhost? `http://${document.location.host}` : `https://${document.location.host}`,
+                redirectSignOut: isLocalhost? `http://${document.location.host}` : `https://${document.location.host}`,
             }
         }
 
