@@ -1,4 +1,3 @@
-import './globals.css'
 import '@/styles/globals.scss'
 import '@/styles/post.scss'
 import '@/styles/styles.scss'

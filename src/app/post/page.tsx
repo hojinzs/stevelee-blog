@@ -1,6 +1,6 @@
 import {type Post} from "@/libs/contentful";
 import {contentfulClient} from "@/libs/contentful";
-import PostListItem from "@/app/post/PostListItem";
+import PostListItem from "@/app/post/components/PostListItem";
 
 export default async function PostListPage({
   searchParams
