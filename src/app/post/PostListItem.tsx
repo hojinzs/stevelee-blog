@@ -1,6 +1,6 @@
 import {Post} from "@/libs/contentful";
-import Link from "next/link";
 import {Entry} from "contentful";
+import Link from "next/link";
 
 export interface PostListItemProps {
   value: Entry<Post>
