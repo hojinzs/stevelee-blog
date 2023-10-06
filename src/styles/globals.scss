@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/font/PretendardStd-Light.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/font/PretendardStd-Regular.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/font/PretendardStd-Bold.woff2') format('woff');
+}
+
+:root {
+  --foreground-rgb: 20, 20, 20;
+  --foreground-secondary-rgb: 78, 78, 78;
+  --foreground-secondary-highlight-rgb: 45, 45, 45;
+  --background-rgb: 255, 255, 255;
+  --background-secondary-rgb: 250, 250, 250;
+  --border-rgb: #e8e8e8
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --foreground-secondary-rgb: 165, 165, 165;
+    --foreground-secondary-highlight-rgb: 200, 200, 200;
+    --background-rgb: 0, 0, 0;
+    --background-secondary-rgb: 12, 12, 12;
+    --border-rgb: #1e1e1e
+  }
+}
+
+html, body {
+  font-family: 'Pretendard',
+  '-apple-system',
+  'BlinkMacSystemFont',
+  'Roboto',
+  'Helvetica Neue',
+  'Segoe UI',
+  'Apple SD Gothic Neo',
+  'Noto Sans KR',
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'sans-serif';
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+
+  p {
+    line-height: 1.5em;
+    margin-bottom: 1.25em;
+  }
+
+  h6 {
+    font-size: 1.05em;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.38em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 2.1em;
+    font-weight: 700;
+  }
+
+  p, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.8rem;
+  }
+
+  h1 {
+    margin-bottom: 0.75em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+  }
+}
