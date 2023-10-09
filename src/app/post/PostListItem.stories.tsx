@@ -1,5 +1,5 @@
 import {Meta, StoryObj} from "@storybook/react";
-import PostListItem from "@/app/post/components/PostListItem";
+import PostListItem from "@/app/post/PostListItem";
 import {faker} from "@faker-js/faker/locale/ko";
 
 const meta: Meta = {
