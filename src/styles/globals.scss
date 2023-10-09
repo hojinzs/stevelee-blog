@@ -56,14 +56,18 @@ html, body {
   'Segoe UI Emoji',
   'Segoe UI Symbol',
   'sans-serif';
-  font-size: 18px;
-  font-weight: 300;
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  font-size: 17px;
+
+  @media (min-width: theme('screens.sm')) {
+    font-size: 20px;
+  }
+
+  @apply
+    tw-text-gray-900 dark:tw-text-gray-50
+    tw-bg-white dark:tw-bg-gray-950;
 
   p {
-    line-height: 1.5em;
-    margin-bottom: 1.25em;
+    @apply tw-leading-7;
   }
 
   h6 {

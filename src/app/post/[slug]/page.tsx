@@ -50,7 +50,7 @@ export default async function PostDetail({
 export const generateStaticParams = async () => {
   const entries = await contentfulClient.getEntries<Post>({
     content_type: "post",
-    select: "sys.id" as any,
+    select: ["sys.id"],
   });
 
   return entries.items.map((item) => ({

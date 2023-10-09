@@ -13,3 +13,14 @@ export type Post = EntrySkeletonType<{
   body: string
   extra?: object
 }>
+
+export type Category = EntrySkeletonType<{
+  slug: string
+  name: string,
+  description: string
+}>
+
+export type Tags = EntrySkeletonType<{
+  name: string
+  description: string
+}>
